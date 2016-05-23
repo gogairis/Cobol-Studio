@@ -1,0 +1,10 @@
+C:\My_Learning\Cobol_Template\Cobol.BLL\bin\Debug\Cobol.BLL.dll
+C:\My_Learning\Cobol_Template\Cobol.BLL\bin\Debug\Cobol.BLL.pdb
+C:\My_Learning\Cobol_Template\Cobol.BLL\obj\Debug\Cobol.BLL.csprojResolveAssemblyReference.cache
+C:\My_Learning\Cobol_Template\Cobol.BLL\obj\Debug\Cobol.BLL.dll
+C:\My_Learning\Cobol_Template\Cobol.BLL\obj\Debug\Cobol.BLL.pdb
+C:\My_Learning\Cobol Studio\Cobol.BLL\bin\Debug\Cobol.BLL.dll
+C:\My_Learning\Cobol Studio\Cobol.BLL\bin\Debug\Cobol.BLL.pdb
+C:\My_Learning\Cobol Studio\Cobol.BLL\obj\Debug\Cobol.BLL.dll
+C:\My_Learning\Cobol Studio\Cobol.BLL\obj\Debug\Cobol.BLL.pdb
+C:\My_Learning\Cobol Studio\Cobol.BLL\obj\Debug\Cobol.BLL.csprojResolveAssemblyReference.cache

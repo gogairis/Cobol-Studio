@@ -1,0 +1,16 @@
+C:\My_Learning\Cobol_Template\John.SocialClub.Desktop\bin\Debug\Cobol.TemplateGenerator.Desktop.exe.config
+C:\My_Learning\Cobol_Template\John.SocialClub.Desktop\bin\Debug\Cobol.TemplateGenerator.Desktop.exe
+C:\My_Learning\Cobol_Template\John.SocialClub.Desktop\bin\Debug\Cobol.TemplateGenerator.Desktop.pdb
+C:\My_Learning\Cobol_Template\John.SocialClub.Desktop\bin\Debug\Cobol.TemplateGenerator.Data.dll
+C:\My_Learning\Cobol_Template\John.SocialClub.Desktop\bin\Debug\Cobol.TemplateGenerator.Data.pdb
+C:\My_Learning\Cobol_Template\John.SocialClub.Desktop\obj\x86\Debug\Cobol.TemplateGenerator.Desktop.csprojResolveAssemblyReference.cache
+C:\My_Learning\Cobol_Template\John.SocialClub.Desktop\obj\x86\Debug\Cobol.TemplateGenerator.Desktop.csproj.ResolveComReference.cache
+C:\My_Learning\Cobol_Template\John.SocialClub.Desktop\obj\x86\Debug\Cobol.TemplateGenerator.Desktop.Forms.Membership.Manage.resources
+C:\My_Learning\Cobol_Template\John.SocialClub.Desktop\obj\x86\Debug\Cobol.TemplateGenerator.Desktop.Login.resources
+C:\My_Learning\Cobol_Template\John.SocialClub.Desktop\obj\x86\Debug\Cobol.TemplateGenerator.Desktop.Properties.Resources.resources
+C:\My_Learning\Cobol_Template\John.SocialClub.Desktop\obj\x86\Debug\Cobol.TemplateGenerator.Desktop.csproj.GenerateResource.Cache
+C:\My_Learning\Cobol_Template\John.SocialClub.Desktop\obj\x86\Debug\Cobol.TemplateGenerator.Desktop.exe
+C:\My_Learning\Cobol_Template\John.SocialClub.Desktop\obj\x86\Debug\Cobol.TemplateGenerator.Desktop.pdb
+C:\My_Learning\Cobol_Template\John.SocialClub.Desktop\bin\Debug\Cobol.BLL.dll
+C:\My_Learning\Cobol_Template\John.SocialClub.Desktop\bin\Debug\Cobol.BLL.pdb
+C:\My_Learning\Cobol_Template\John.SocialClub.Desktop\bin\Debug\CobolStudio.Desktop.exe.config

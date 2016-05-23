@@ -1,0 +1,11 @@
+C:\My_Learning\Cobol Studio\CobolStudio.Main\bin\Debug\CobolStudio.Main.pdb
+C:\My_Learning\Cobol Studio\CobolStudio.Main\obj\Debug\CobolStudio.Main.Forms.CobolStudio.resources
+C:\My_Learning\Cobol Studio\CobolStudio.Main\obj\Debug\CobolStudio.Main.csproj.GenerateResource.Cache
+C:\My_Learning\Cobol Studio\CobolStudio.Main\obj\Debug\CobolStudio.Main.pdb
+C:\My_Learning\Cobol Studio\CobolStudio.Main\bin\Debug\CobolStudio.Main.exe
+C:\My_Learning\Cobol Studio\CobolStudio.Main\obj\Debug\CobolStudio.Main.exe
+C:\My_Learning\Cobol Studio\CobolStudio.Main\obj\Debug\CobolStudio.Main.csprojResolveAssemblyReference.cache
+C:\My_Learning\Cobol Studio\CobolStudio.Main\obj\Debug\CobolStudio.Main.Properties.Resources.resources
+C:\My_Learning\Cobol Studio\CobolStudio.Main\bin\Debug\Cobol.BLL.dll
+C:\My_Learning\Cobol Studio\CobolStudio.Main\bin\Debug\Cobol.BLL.pdb
+C:\My_Learning\Cobol Studio\CobolStudio.Main\obj\Debug\CobolStudio.Main.Forms.InputFiles.resources
