@@ -1,5 +1,0 @@
-/media/goga/Windows8_OS/Cobol Studio/Cobol.BLL/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/media/goga/Windows8_OS/Cobol Studio/Cobol.BLL/bin/Debug/Cobol.BLL.dll.mdb
-/media/goga/Windows8_OS/Cobol Studio/Cobol.BLL/bin/Debug/Cobol.BLL.dll
-/media/goga/Windows8_OS/Cobol Studio/Cobol.BLL/obj/Debug/Cobol.BLL.dll
-/media/goga/Windows8_OS/Cobol Studio/Cobol.BLL/obj/Debug/Cobol.BLL.dll.mdb
