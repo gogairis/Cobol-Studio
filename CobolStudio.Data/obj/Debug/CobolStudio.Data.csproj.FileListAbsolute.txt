@@ -1,5 +1,0 @@
-C:\My_Learning\Cobol Studio\CobolStudio.Data\bin\Debug\CobolStudio.Data.dll
-C:\My_Learning\Cobol Studio\CobolStudio.Data\bin\Debug\CobolStudio.Data.pdb
-C:\My_Learning\Cobol Studio\CobolStudio.Data\obj\Debug\CobolStudio.Data.csprojResolveAssemblyReference.cache
-C:\My_Learning\Cobol Studio\CobolStudio.Data\obj\Debug\CobolStudio.Data.dll
-C:\My_Learning\Cobol Studio\CobolStudio.Data\obj\Debug\CobolStudio.Data.pdb
