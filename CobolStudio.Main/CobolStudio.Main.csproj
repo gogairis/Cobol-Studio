@@ -45,12 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\InputFiles.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\InputFiles.Designer.cs">
-      <DependentUpon>InputFiles.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Forms\MessageBoxResult.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Forms\CobolStudio.cs">
       <SubType>Form</SubType>
@@ -69,9 +64,6 @@
     <EmbeddedResource Include="Forms\CobolStudio.resx">
       <DependentUpon>CobolStudio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\InputFiles.resx">
-      <DependentUpon>InputFiles.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -89,6 +81,20 @@
       <Project>{dc3b5f7b-a4b4-4a4a-80ae-8aded1ff1e1a}</Project>
       <Name>Cobol.BLL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Files\AreaNames.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\CopyBooks.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\DBRecords.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\SubSchemaName.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -61,7 +61,7 @@ namespace CobolStudio.Main.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please Click on Add File.
+        ///   Looks up a localized string similar to Please click on &quot;Add&quot; button.
         /// </summary>
         internal static string Add_The_File_Message {
             get {
@@ -79,7 +79,7 @@ namespace CobolStudio.Main.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to File Name Already Exists..
+        ///   Looks up a localized string similar to File name already exists..
         /// </summary>
         internal static string Already_Exists_Message {
             get {
@@ -97,6 +97,24 @@ namespace CobolStudio.Main.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Area Name Already Added.
+        /// </summary>
+        internal static string Area_Already_Exists_Message {
+            get {
+                return ResourceManager.GetString("Area_Already_Exists_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Duplicate Area Name.
+        /// </summary>
+        internal static string Area_Already_Exists_Title {
+            get {
+                return ResourceManager.GetString("Area_Already_Exists_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Code has been generated, please check your directory..
         /// </summary>
         internal static string Code_Generation_Message {
@@ -106,7 +124,7 @@ namespace CobolStudio.Main.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Code - Generated.
+        ///   Looks up a localized string similar to Code Generated.
         /// </summary>
         internal static string Code_Generation_Message_Title {
             get {
@@ -115,7 +133,7 @@ namespace CobolStudio.Main.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Max 20 Database Records are allowed.
+        ///   Looks up a localized string similar to Max 20 database records are allowed.
         /// </summary>
         internal static string DB_Rec_Limit_Message {
             get {
@@ -133,29 +151,74 @@ namespace CobolStudio.Main.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete.
+        ///   Looks up a localized string similar to DB Record Already Added.
         /// </summary>
-        internal static string Delete_Button_Text {
+        internal static string DBRec_Already_Exists_Message {
             get {
-                return ResourceManager.GetString("Delete_Button_Text", resourceCulture);
+                return ResourceManager.GetString("DBRec_Already_Exists_Message", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Member details deleted successfully.
+        ///   Looks up a localized string similar to Duplicate DB Record.
         /// </summary>
-        internal static string Delete_Successful_Message {
+        internal static string DBRec_Already_Exists_Title {
             get {
-                return ResourceManager.GetString("Delete_Successful_Message", resourceCulture);
+                return ResourceManager.GetString("DBRec_Already_Exists_Title", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete successfull.
+        ///   Looks up a localized string similar to Please enter a Area name to add.
         /// </summary>
-        internal static string Delete_Successful_Message_Title {
+        internal static string Enter_AreaName_Message {
             get {
-                return ResourceManager.GetString("Delete_Successful_Message_Title", resourceCulture);
+                return ResourceManager.GetString("Enter_AreaName_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Area Name Field Empty.
+        /// </summary>
+        internal static string Enter_AreaName_Title {
+            get {
+                return ResourceManager.GetString("Enter_AreaName_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter a copybook name to add.
+        /// </summary>
+        internal static string Enter_CopyBook_Message {
+            get {
+                return ResourceManager.GetString("Enter_CopyBook_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CopyBook Field Empty.
+        /// </summary>
+        internal static string Enter_CopyBook_Title {
+            get {
+                return ResourceManager.GetString("Enter_CopyBook_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter a Database record name to add.
+        /// </summary>
+        internal static string Enter_DBRec_Message {
+            get {
+                return ResourceManager.GetString("Enter_DBRec_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DBRec Field Empty.
+        /// </summary>
+        internal static string Enter_DBRec_Title {
+            get {
+                return ResourceManager.GetString("Enter_DBRec_Title", resourceCulture);
             }
         }
         
@@ -196,65 +259,20 @@ namespace CobolStudio.Main.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please enter an Input File Name.
+        ///   Looks up a localized string similar to File Name Empty.
         /// </summary>
-        internal static string Input_Filed_Empty_Message {
+        internal static string File_Name_Empty_Title {
             get {
-                return ResourceManager.GetString("Input_Filed_Empty_Message", resourceCulture);
+                return ResourceManager.GetString("File_Name_Empty_Title", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Input Field empty.
+        ///   Looks up a localized string similar to Please enter a file name.
         /// </summary>
-        internal static string Input_Filed_Empty_Title {
+        internal static string File_Name_Filed_Empty_Message {
             get {
-                return ResourceManager.GetString("Input_Filed_Empty_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Login.
-        /// </summary>
-        internal static string Login_Login_Button_Text {
-            get {
-                return ResourceManager.GetString("Login_Login_Button_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Password:.
-        /// </summary>
-        internal static string Login_Password_Label_Text {
-            get {
-                return ResourceManager.GetString("Login_Password_Label_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Username:.
-        /// </summary>
-        internal static string Login_Username_Label_Text {
-            get {
-                return ResourceManager.GetString("Login_Username_Label_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Please enter a valid username and password..
-        /// </summary>
-        internal static string Login_Validation_Message {
-            get {
-                return ResourceManager.GetString("Login_Validation_Message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Login - Message.
-        /// </summary>
-        internal static string Login_Validation_Message_Title {
-            get {
-                return ResourceManager.GetString("Login_Validation_Message_Title", resourceCulture);
+                return ResourceManager.GetString("File_Name_Filed_Empty_Message", resourceCulture);
             }
         }
         
@@ -265,6 +283,87 @@ namespace CobolStudio.Main.Properties {
             get {
                 object obj = ResourceManager.GetObject("negative_sign", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New copybook name entered, this will be added to the copybook list.
+        /// </summary>
+        internal static string New_CopyBook_Message {
+            get {
+                return ResourceManager.GetString("New_CopyBook_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Copybook.
+        /// </summary>
+        internal static string New_CopyBook_Title {
+            get {
+                return ResourceManager.GetString("New_CopyBook_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Database Area entered, this will be added to the DB Area list.
+        /// </summary>
+        internal static string New_DatabaseArea_Message {
+            get {
+                return ResourceManager.GetString("New_DatabaseArea_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Database Area.
+        /// </summary>
+        internal static string New_DatabaseArea_Title {
+            get {
+                return ResourceManager.GetString("New_DatabaseArea_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Database Record entered, this will be added to the DB Record list.
+        /// </summary>
+        internal static string New_DatabaseRecord_Message {
+            get {
+                return ResourceManager.GetString("New_DatabaseRecord_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Database Record.
+        /// </summary>
+        internal static string New_DatabaseRecord_Title {
+            get {
+                return ResourceManager.GetString("New_DatabaseRecord_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New SubSchema added.
+        /// </summary>
+        internal static string New_Schema_Title {
+            get {
+                return ResourceManager.GetString("New_Schema_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Subschema name entered, this will be added to the Subschema list.
+        /// </summary>
+        internal static string New_Subschema_Message {
+            get {
+                return ResourceManager.GetString("New_Subschema_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Subschema.
+        /// </summary>
+        internal static string New_Subschema_Title {
+            get {
+                return ResourceManager.GetString("New_Subschema_Title", resourceCulture);
             }
         }
         
@@ -287,201 +386,30 @@ namespace CobolStudio.Main.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No Schema Entered for given Database/Area.
+        /// </summary>
+        internal static string No_Schema_Message {
+            get {
+                return ResourceManager.GetString("No_Schema_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Schema Name Empty.
+        /// </summary>
+        internal static string No_Schema_Title {
+            get {
+                return ResourceManager.GetString("No_Schema_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Plus_sign {
             get {
                 object obj = ResourceManager.GetObject("Plus_sign", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Print.
-        /// </summary>
-        internal static string Print_Print_Button_Text {
-            get {
-                return ResourceManager.GetString("Print_Print_Button_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Print preview.
-        /// </summary>
-        internal static string Print_PrintPreview_Button_Text {
-            get {
-                return ResourceManager.GetString("Print_PrintPreview_Button_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to No. of children.
-        /// </summary>
-        internal static string Registration_Children_Label_Text {
-            get {
-                return ResourceManager.GetString("Registration_Children_Label_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Date of birth.
-        /// </summary>
-        internal static string Registration_DateOfBirth_Label_Text {
-            get {
-                return ResourceManager.GetString("Registration_DateOfBirth_Label_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Registration failed.
-        /// </summary>
-        internal static string Registration_Error_Message {
-            get {
-                return ResourceManager.GetString("Registration_Error_Message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Registration error.
-        /// </summary>
-        internal static string Registration_Error_Message_Title {
-            get {
-                return ResourceManager.GetString("Registration_Error_Message_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Health status.
-        /// </summary>
-        internal static string Registration_HealthStatus_Label_Text {
-            get {
-                return ResourceManager.GetString("Registration_HealthStatus_Label_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Please select health status..
-        /// </summary>
-        internal static string Registration_HealthStatus_Select_Text {
-            get {
-                return ResourceManager.GetString("Registration_HealthStatus_Select_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Marital status.
-        /// </summary>
-        internal static string Registration_MaritalStatus_Label_Text {
-            get {
-                return ResourceManager.GetString("Registration_MaritalStatus_Label_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Please select marital status..
-        /// </summary>
-        internal static string Registration_MaritalStatus_Select_Text {
-            get {
-                return ResourceManager.GetString("Registration_MaritalStatus_Select_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Name.
-        /// </summary>
-        internal static string Registration_Name_Label_Text {
-            get {
-                return ResourceManager.GetString("Registration_Name_Label_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Name is required..
-        /// </summary>
-        internal static string Registration_Name_Required_Text {
-            get {
-                return ResourceManager.GetString("Registration_Name_Required_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Occupation.
-        /// </summary>
-        internal static string Registration_Occupation_Label_Text {
-            get {
-                return ResourceManager.GetString("Registration_Occupation_Label_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Please select a occupation..
-        /// </summary>
-        internal static string Registration_Occupation_Select_Text {
-            get {
-                return ResourceManager.GetString("Registration_Occupation_Select_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Register.
-        /// </summary>
-        internal static string Registration_Register_Button_Text {
-            get {
-                return ResourceManager.GetString("Registration_Register_Button_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Salary.
-        /// </summary>
-        internal static string Registration_Salary_Label_Text {
-            get {
-                return ResourceManager.GetString("Registration_Salary_Label_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to New member registered successfully!.
-        /// </summary>
-        internal static string Registration_Successful_Message {
-            get {
-                return ResourceManager.GetString("Registration_Successful_Message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Registration Successful.
-        /// </summary>
-        internal static string Registration_Successful_Message_Title {
-            get {
-                return ResourceManager.GetString("Registration_Successful_Message_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Social Member Club - Members.
-        /// </summary>
-        internal static string Report_Header {
-            get {
-                return ResourceManager.GetString("Report_Header", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Refresh.
-        /// </summary>
-        internal static string Search_Refresh_Button_Text {
-            get {
-                return ResourceManager.GetString("Search_Refresh_Button_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Search.
-        /// </summary>
-        internal static string Search_Search_Button_Text {
-            get {
-                return ResourceManager.GetString("Search_Search_Button_Text", resourceCulture);
             }
         }
         
@@ -500,42 +428,6 @@ namespace CobolStudio.Main.Properties {
         internal static string System_Error_Message_Title {
             get {
                 return ResourceManager.GetString("System_Error_Message_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Update.
-        /// </summary>
-        internal static string Update_Button_Text {
-            get {
-                return ResourceManager.GetString("Update_Button_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Update error.
-        /// </summary>
-        internal static string Update_Error_Message_Title {
-            get {
-                return ResourceManager.GetString("Update_Error_Message_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Member details updated successfully.
-        /// </summary>
-        internal static string Update_Successful_Message {
-            get {
-                return ResourceManager.GetString("Update_Successful_Message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Update successfull.
-        /// </summary>
-        internal static string Update_Successful_Message_Title {
-            get {
-                return ResourceManager.GetString("Update_Successful_Message_Title", resourceCulture);
             }
         }
     }

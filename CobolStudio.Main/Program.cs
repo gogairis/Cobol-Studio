@@ -15,9 +15,6 @@ namespace CobolStudio.Main
         [STAThread]
         static void Main()
         {
-            //Console.Write(Utils.BuildCommentHeader());
-            //Console.Write(Utils.BuildCommentLine("jatin ahdjhsajda hjhjdhfjh hjfdshfjhsdjhfdjshfjds hsjdfhjsdhfjsd hsdjfhjsdhfjds",true));
-            //Console.Write(Utils.BuildCommentHeader());
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false); 
             Application.Run(new Forms.CobolStudio());
