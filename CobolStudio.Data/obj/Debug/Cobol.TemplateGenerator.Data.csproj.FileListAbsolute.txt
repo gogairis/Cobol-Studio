@@ -1,5 +1,0 @@
-C:\My_Learning\Cobol_Template\John.SocialClub.Data\bin\Debug\Cobol.TemplateGenerator.Data.dll
-C:\My_Learning\Cobol_Template\John.SocialClub.Data\bin\Debug\Cobol.TemplateGenerator.Data.pdb
-C:\My_Learning\Cobol_Template\John.SocialClub.Data\obj\Debug\Cobol.TemplateGenerator.Data.csprojResolveAssemblyReference.cache
-C:\My_Learning\Cobol_Template\John.SocialClub.Data\obj\Debug\Cobol.TemplateGenerator.Data.dll
-C:\My_Learning\Cobol_Template\John.SocialClub.Data\obj\Debug\Cobol.TemplateGenerator.Data.pdb
