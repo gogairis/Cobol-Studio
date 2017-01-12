@@ -41,10 +41,33 @@ namespace Cobol.BLL.DivisionsProcessor.Impl
 
             // Select Input/Output files
             sb.Append(Environment.NewLine);
-            if (inputItemObj.NoOfInputFiles > 0 | inputItemObj.NoOfOutputFIles > 0)
+            if (inputItemObj.NoOfInputFiles > 0 | inputItemObj.NoOfOutputFiles > 0 | 
+                inputItemObj.RestartType == Constants.RestartType.File.ToString())
             {
                 sb.Append(Utils.BuildAreaA(Constants.EnvironmentDivision.InoutOutputSection)).Append(Environment.NewLine);
                 sb.Append(Utils.BuildAreaA(Constants.EnvironmentDivision.FileControl)).Append(Environment.NewLine);
+
+                string wsLevel = string.Empty;
+                if (!inputItemObj.RestartInd)
+                {
+                    wsLevel = "WS01-";
+                }
+                else
+                    if (inputItemObj.RestartType == Constants.RestartType.Database.ToString())
+                    {
+                        wsLevel = "WS04-";
+                    }
+                    else
+                        if (inputItemObj.NoOfInputFiles + inputItemObj.NoOfOutputFiles == 0
+                            && inputItemObj.RestartType == Constants.RestartType.File.ToString())
+                        {
+                            wsLevel = "WS02-";
+                        }
+                        else
+                        {
+                            wsLevel = "WS03-";
+                        }
+
 
                 // Select Input Files
                 if (inputItemObj.NoOfInputFiles > 0)
@@ -60,6 +83,7 @@ namespace Cobol.BLL.DivisionsProcessor.Impl
                             string areaC = Constants.EnvironmentDivision.Assign + Utils.LogicalFileName(i.ToString()) +
                                            Constants.CommonUseItem.Dot;
                             sb.Append(Utils.BuildCompleteLine("", areaB, areaC));
+                            WorkingStorage.inputIndexedFile.Add("");
                         }
                         else
                         {
@@ -73,17 +97,18 @@ namespace Cobol.BLL.DivisionsProcessor.Impl
                             sb.Append(Utils.BuildAreaB(Constants.EnvironmentDivision.RecordKey));
                             sb.Append(Utils.LogicalFileName(i.ToString()) + Constants.EnvironmentDivision.Key).Append(Environment.NewLine);
                             sb.Append(Utils.BuildAreaB(Constants.EnvironmentDivision.FileStatus));
-                            sb.Append(Utils.LogicalFileName(i.ToString())).Append(Constants.EnvironmentDivision.Status)
-                                .Append(Constants.CommonUseItem.Dot).Append(Environment.NewLine);
+                            
+                            WorkingStorage.inputIndexedFile.Add(wsLevel + Utils.LogicalFileName(i.ToString()) + Constants.EnvironmentDivision.Status);
+                            sb.Append(WorkingStorage.inputIndexedFile[i-1] + Constants.CommonUseItem.Dot).Append(Environment.NewLine);
                         }
                     }
                 }
 
                 // Select Output files
-                if (inputItemObj.NoOfOutputFIles > 0)
+                if (inputItemObj.NoOfOutputFiles > 0)
                 {
                     sb.Append(Environment.NewLine);
-                    for (int i = 1; i <= inputItemObj.NoOfOutputFIles; i++)
+                    for (int i = 1; i <= inputItemObj.NoOfOutputFiles; i++)
                     {
                         if (inputItemObj.OutputFileTypes[i - 1] == "Sequential")
                         {
@@ -93,6 +118,7 @@ namespace Cobol.BLL.DivisionsProcessor.Impl
                                            Utils.LogicalFileName((i + inputItemObj.NoOfInputFiles).ToString()) +
                                            Constants.CommonUseItem.Dot;
                             sb.Append(Utils.BuildCompleteLine("", areaB, areaC));
+                            WorkingStorage.outputIndexedFile.Add("");
                         }
                         else
                         {
@@ -101,17 +127,26 @@ namespace Cobol.BLL.DivisionsProcessor.Impl
                             string areaC = Constants.EnvironmentDivision.Assign + Utils.LogicalFileName((i + inputItemObj.NoOfInputFiles).ToString());
                             sb.Append(Utils.BuildCompleteLine("", areaB, areaC));
                             sb.Append(Utils.BuildAreaB(Constants.EnvironmentDivision.Organization)).Append(Environment.NewLine);
-                            sb.Append(Utils.BuildAreaB(Constants.EnvironmentDivision.Access)).Append(Environment.NewLine);
+                            sb.Append(Utils.BuildAreaB(Constants.EnvironmentDivision.Access));
+                            sb.Append(inputItemObj.OutputFileAccessType[i - 1]).Append(Environment.NewLine);
                             sb.Append(Utils.BuildAreaB(Constants.EnvironmentDivision.RecordKey));
                             sb.Append(Utils.LogicalFileName((i + inputItemObj.NoOfInputFiles).ToString()) + Constants.EnvironmentDivision.Key).Append(Environment.NewLine);
                             sb.Append(Utils.BuildAreaB(Constants.EnvironmentDivision.FileStatus));
-                            sb.Append(Utils.LogicalFileName((i + inputItemObj.NoOfInputFiles).ToString()))
-                                .Append(Constants.EnvironmentDivision.Status)
-                                .Append(Constants.CommonUseItem.Dot).Append(Environment.NewLine);                         
+                            WorkingStorage.outputIndexedFile.Add(wsLevel + Utils.LogicalFileName((i + inputItemObj.NoOfInputFiles).ToString()) + Constants.EnvironmentDivision.Status);
+                            sb.Append(WorkingStorage.outputIndexedFile[i-1] + Constants.CommonUseItem.Dot).Append(Environment.NewLine);                         
                         }
                     }
                 }
-                sb.Append(Environment.NewLine);
+
+                if (inputItemObj.RestartInd && inputItemObj.RestartType == Constants.RestartType.File.ToString())
+                {
+                    sb.Append(Utils.BuildCompleteLine("",Constants.EnvironmentDivision.Select + Constants.DataDivision.restartFileText, 
+                        Constants.EnvironmentDivision.Assign + Constants.DataDivision.restartFileText));
+                    sb.Append(Utils.BuildAreaB(Constants.EnvironmentDivision.FileStatus));
+                    WorkingStorage.otherWorkingStorage.Add(wsLevel + Constants.EnvironmentDivision.rsFileStatus);
+                    sb.AppendLine(WorkingStorage.otherWorkingStorage[0] + Constants.CommonUseItem.Dot);
+                }
+                sb.AppendLine();
             }
 
             // IDMS Control Section

@@ -40,9 +40,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessModel\Constants.cs" />
-    <Compile Include="BusinessModel\InputFileData.cs" />
+    <Compile Include="BusinessModel\DatabaseRepository.cs" />
+    <Compile Include="BusinessModel\FileData.cs" />
     <Compile Include="BusinessModel\DivisionInputItems.cs" />
     <Compile Include="BusinessModel\InputFileRepository.cs" />
+    <Compile Include="BusinessModel\OutputFileRepository.cs" />
+    <Compile Include="BusinessModel\WorkingStorage.cs" />
     <Compile Include="DivisionsProcessor\DivisionProcessorFactory.cs" />
     <Compile Include="DivisionsProcessor\Impl\DataDivision.cs" />
     <Compile Include="DivisionsProcessor\Impl\EnvironmentDivision.cs" />

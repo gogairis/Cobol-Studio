@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Cobol.BLL.BusinessModel
 {
-    public class InputFileData
+    public class FileData
     {
-        public InputFileData(string fileName, string fileDescription, string fileType, string fileLayout, string accessType)
+        public FileData(string fileName, string fileDescription, string fileType, string fileLayout, string accessType)
         {
             _fileName = fileName;
             _fileDescription = fileDescription;

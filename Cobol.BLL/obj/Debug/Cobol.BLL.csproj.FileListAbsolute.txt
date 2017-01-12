@@ -8,3 +8,8 @@ C:\My_Learning\Cobol Studio\Cobol.BLL\bin\Debug\Cobol.BLL.pdb
 C:\My_Learning\Cobol Studio\Cobol.BLL\obj\Debug\Cobol.BLL.dll
 C:\My_Learning\Cobol Studio\Cobol.BLL\obj\Debug\Cobol.BLL.pdb
 C:\My_Learning\Cobol Studio\Cobol.BLL\obj\Debug\Cobol.BLL.csprojResolveAssemblyReference.cache
+C:\Cobol Studio\Cobol.BLL\bin\Debug\Cobol.BLL.dll
+C:\Cobol Studio\Cobol.BLL\bin\Debug\Cobol.BLL.pdb
+C:\Cobol Studio\Cobol.BLL\obj\Debug\Cobol.BLL.dll
+C:\Cobol Studio\Cobol.BLL\obj\Debug\Cobol.BLL.pdb
+C:\Cobol Studio\Cobol.BLL\obj\Debug\Cobol.BLL.csprojResolveAssemblyReference.cache

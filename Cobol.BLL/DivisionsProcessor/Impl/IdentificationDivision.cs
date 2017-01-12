@@ -42,7 +42,7 @@ namespace Cobol.BLL.DivisionsProcessor.Impl
             }
             
             // Write Input/Output File details
-            if (inputItemObj.NoOfInputFiles > 0 | inputItemObj.NoOfOutputFIles > 0)
+            if (inputItemObj.NoOfInputFiles > 0 | inputItemObj.NoOfOutputFiles > 0)
             {
                 sb.Append(Utils.BuildCommentLine(" "));
                 sb.Append(Utils.BuildCommentHeader());
@@ -62,16 +62,15 @@ namespace Cobol.BLL.DivisionsProcessor.Impl
                 }
 
                 // Write output file details
-                if (inputItemObj.NoOfOutputFIles > 0)
+                if (inputItemObj.NoOfOutputFiles > 0)
                 {
                     sb.Append(Utils.BuildCommentLine(" "));
                     sb.Append(Utils.BuildCommentLine(Constants.IdentificationDivision.OutputFiles));
-                    for (int i = 0; i < inputItemObj.NoOfOutputFIles; i++)
+                    for (int i = 0; i < inputItemObj.NoOfOutputFiles; i++)
                     {
                         sb.Append(Utils.BuildCommentLine(inputItemObj.OutputFileNames[i] + " - " + inputItemObj.OutputFileDescriptions[i]));
                     }
                 }
-
             }
 
             sb.Append(Utils.BuildCommentLine(" "));

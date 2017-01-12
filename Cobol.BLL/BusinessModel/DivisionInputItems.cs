@@ -16,7 +16,9 @@ namespace Cobol.BLL.BusinessModel
         public List<string> InputFileNames { get; set; }
         public List<string> OutputFileNames { get; set; }
         public List<string> InputFileTypes { get; set; }
+        public List<string> InputFileNumber { get; set; }
         public List<string> OutputFileTypes { get; set; }
+        public List<string> OutputFileNumber { get; set; }
         public List<string> InputFileDescriptions { get; set; }
         public List<string> OutputFileDescriptions { get; set; }
         public List<string> InputFieLayout { get; set; }
@@ -24,9 +26,12 @@ namespace Cobol.BLL.BusinessModel
         public List<string> OutputFieLayout { get; set; }
         public List<string> OutputFileAccessType { get; set; }
         public int NoOfInputFiles { get; set; }
-        public int NoOfOutputFIles { get; set; }
+        public int NoOfOutputFiles { get; set; }
         public int NoOfDbRecords { get; set; }
+        public int NoOfDbAreas { get; set; }
         public List<string> DbRecordNames { get; set; }
+        public List<string> DbAreaNames { get; set; }
+        public List<string> DbAreaUsage { get; set; }
         public string SchemaName { get; set; }
         public int VariableSize { get; set; }
         public bool RestartInd { get; set; }
